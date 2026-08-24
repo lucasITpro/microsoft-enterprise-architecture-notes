@@ -1,0 +1,18 @@
+{
+  "displayName": "Require MFA and Compliant Device for Enterprise Apps",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeUsers": ["All"],
+      "excludeUsers": ["GuestOrExternalUsers"]
+    },
+    "applications": {
+      "includeApplications": ["All"]
+    },
+    "clientAppTypes": ["browser", "mobileAppsAndDesktopClients"]
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": ["mfa", "compliantDevice"]
+  }
+}
