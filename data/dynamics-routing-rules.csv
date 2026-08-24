@@ -1,0 +1,5 @@
+Module,TargetExam,RuleName,Condition,QueueAssignment,Priority
+CustomerService,MB-230,High_Priority_Escalation,Case.Priority == 'High',Tier2_Support_Queue,1
+CustomerService,MB-230,Omnichannel_VIP_Chat,User.IsVIP == true,VIP_Customer_Queue,1
+SupplyChain,MB-330,Raw_Material_Putaway,Item.Type == 'Raw',Zone_A_Warehouse,2
+SupplyChain,MB-330,Bulk_Item_Pick_Directives,Order.Quantity > 100,Bulk_Pick_Location,1
